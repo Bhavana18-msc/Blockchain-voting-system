@@ -8,7 +8,7 @@ Original file is located at
 """
 
 import streamlit as st
-from blockchain_logic import register_voter, generate_tokens, cast_vote, audit_blockchain, blockchain, voter_db
+from corevote import register_voter, generate_tokens, cast_vote, audit_blockchain, blockchain, voter_db
 
 # Streamlit Page Configuration
 st.set_page_config(
@@ -69,3 +69,12 @@ with st.expander("Audit Blockchain"):
         st.success("Blockchain is valid and secure.")
     else:
         st.error("Blockchain integrity compromised!")
+
+"""File "/home/adminuser/venv/lib/python3.12/site-packages/streamlit/runtime/scriptrunner/exec_code.py", line 88, in exec_func_with_error_handling
+    result = func()
+             ^^^^^^
+File "/home/adminuser/venv/lib/python3.12/site-packages/streamlit/runtime/scriptrunner/script_runner.py", line 579, in code_to_exec
+    exec(code, module.__dict__)
+File "/mount/src/blockchain-voting-system/strlt.py", line 11, in <module>
+    from blockchain_logic import register_voter, generate_tokens, cast_vote, audit_blockchain, blockchain, voter_db
+"""
