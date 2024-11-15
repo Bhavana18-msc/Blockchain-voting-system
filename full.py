@@ -7,7 +7,7 @@ Original file is located at
     https://colab.research.google.com/drive/16a1DvlErfqdYI9U_2cMsP8p7FUIW2Xfj
 """
 
-!pip install cryptography
+pip install cryptography
 import hashlib
 import json
 import time
@@ -156,7 +156,7 @@ def audit_blockchain():
     return True
 
 ###################################
-!pip install streamlit
+pip install streamlit
 import streamlit as st
 
 # Streamlit Page Configuration
